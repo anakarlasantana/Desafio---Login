@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+body{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background);
+     
+}
+
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #191816;
+    color: #afb6c2;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    
+
+  }
+
+  #logo{
+  position: absolute;
+  width: 115px;
+  height: 28px;
+  left: 40px;
+  top: 40px;
+  }
+
+
+.Form-container{
+    display: flex;
+    position: absolute;
+    width: 350px;
+    height: 320px;
+    left: 100px;
+    top: 130px;
+    background-color: var(--form-background);
+    border-radius: 4px;
+    padding: 70px 60px 70px 70px;
+    margin: auto;
+    
+}
+
+
+#log{    
+display: flex;
+position: relative;
+top: 26px;
+width: 30px;
+height: 25px;
+
+}
+
+.faça h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600px;
+  font-size: 20px;
+  padding-left: 30px;
+  color: #D4CCB6;
+  
+}
+
+.faça{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 65px;
+  bottom: 30px;
+}
+
+.formulario{
+position: relative;
+bottom: 25px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500px;
+font-size: 16px;
+line-height: 30px;
+
+
+
+
+color: #AFB6C2;
+}
+
+p2, p3 label{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 30px;
+
+
+color: #AFB6C2;
+
+}
+
+#email{
+box-sizing: border-box;
+width: 335px;
+height: 44px;
+left: 193px;
+top: 369px;
+background-color: var(--form-background);
+border: 2px;
+color: #AFB6C2;
+box-shadow: 0px 0px 0px 1px ;
+border-radius: 4px;
+}
+
+#senha{
+  box-sizing: border-box;
+  width: 335px;
+  height: 44px;
+  left: 193px;
+  top: 369px;
+  background-color: var(--form-background);
+  border: 2px;
+  color: #AFB6C2;
+  box-shadow: 0px 0px 0px 1px ;
+  border-radius: 4px;
+}
+
+.check label{
+display: flex ;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+padding-left: 30px;
+color: #A9AFB9;
+}
+
+
+.check h3{
+display: flex;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+padding-left: 20px;
+
+
+color: #FFC632;
+}
+
+p5 input{
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 24px;
+gap: 10px;
+
+width: 334px;
+height: 51px;
+left: 193px;
+top: 566px;
+
+background: #FFC632;
+border-radius: 4px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+letter-spacing: 0.015em;
+text-transform: uppercase;
+
+color: #473404;
+
+}
+
+.button{
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+
+}
+
+.senha{
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  position: relative;
+  top: 15px;
+}
+
+
+.Form-container h4{
+  position: relative;
+  left: 45px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFC632;
+}
+
+input[type='email'] {
+  background-image: url('./imagens/mail.svg');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 10px;
+  padding-left: 40px;
+}
+
+input[type='email']:focus-within {
+  border: 2px solid var(--primary-color);
+  background-image: url('./imagens/mail-focus.svg');}
+
+
+input[type='password']:focus-within {
+  border: 2px solid var(--primary-color);
+  background-image: url('/imagens/lock-focus.svg');
+}
+
+input[type='password']{
+  background-image: url('./imagens/lock.svg');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 10px;
+  padding-left: 40px;
+}
+
+.check {
+  position: relative;
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.check input {
+  display: none; 
+}
+
+.checkmark {
+  position: absolute;
+  cursor: pointer;
+  top: -2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: var(--form-background);
+  border: 2px solid var(--text-base);
+  border-radius: 4px;
+}
+
+.check:hover input ~ .checkmark {
+  background-color: var(--background);
+}
+
+.check input:checked ~ .checkmark {
+  background-image: url('/imagens/check.svg');
+  background-repeat: no-repeat;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.check .checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+  left: 25px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+}
+
+/* Exibir o icone quando selecionado */
+.check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.imagem-container{
+  display: flex;
+  background-image: url(/imagens/side-image.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-left: 50%;  
+  background-size: cover;
+  background-position: center;
+
+}
