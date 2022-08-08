@@ -102,7 +102,7 @@ font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 30px;
+line-height: 25px;
 
 
 color: #AFB6C2;
@@ -152,7 +152,7 @@ font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
 font-size: 13px;
-padding-left: 20px;
+padding-left: 75px;
 
 
 color: #FFC632;
@@ -197,19 +197,21 @@ color: #473404;
 .senha{
   display: flex;
   flex-direction: column;
-  height: 120px;
+  height: 110px;
   position: relative;
   top: 15px;
 }
 
 
-.Form-container h4{
+.Form-container a, h4{
   position: relative;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   color: #FFC632;
+  text-decoration: none;
+  text-align: center;
 }
 
 input[type='email'] {
