@@ -158,7 +158,7 @@ padding-left: 75px;
 color: #FFC632;
 }
 
-p5 button{
+.button{
 
 display: flex;
 flex-direction: row;
@@ -188,7 +188,7 @@ color: #473404;
 
 }
 
-.button{
+p5 {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
